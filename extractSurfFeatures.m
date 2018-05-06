@@ -34,7 +34,6 @@ for i = 1:size(intPoints, 1)
             dy = conv2(subreg, haarY, 'same');
             
             %Gaussian weigting
-            %Maybe we should do a convolution here?
             g = gaussian(5*s1+1:5*s1+5, 5*s2+1:5*s2+5);
             
             dx = dx .* g;
